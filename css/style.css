@@ -253,7 +253,7 @@ h3 {
     color: black;
 }
 
-.mainPapelera h1:hover{
+.mainPapelera h1:hover {
     text-decoration: underline;
     color: #384bf5;
     transition: 1s;
@@ -298,7 +298,11 @@ h3 {
 #sectionPapelera figure img:hover {
     width: 210px;
     height: 210px;
-    transition: 1s;
+    transition: 0.5s;
+    /* transform: scale(1);
+    opacity: 0;
+    transition-delay: 0s; */
+    filter: grayscale(80%);
 }
 
 
@@ -324,7 +328,7 @@ h3 {
     color: black;
 }
 
-.mainImpresiones h1:hover{
+.mainImpresiones h1:hover {
     text-decoration: underline;
     color: #384bf5;
     transition: 1s;
@@ -418,42 +422,43 @@ grid-area:
     color: black;
 
 }
-.mainNosotros h1:hover{
+
+.mainNosotros h1:hover {
     color: #384bf5;
     text-decoration: underline;
     transition: 1s;
 }
 
 /* ----------Grids nosotros---------- */
-.containerNosotros{
+.containerNosotros {
     display: grid;
     grid-template-areas:
-    "header header header" 
-    "main main main"
-    "section section section"
-    "pie pie pie";
+        "header header header"
+        "main main main"
+        "section section section"
+        "pie pie pie";
 }
 
-.header{
+.header {
     grid-area: header;
 }
 
-.mainNosotros{
+.mainNosotros {
     grid-area: main;
 }
 
-.sectionNosotros{
+.sectionNosotros {
     grid-area: section;
 }
 
-.footer{
+.footer {
     grid-area: pie;
 }
 
 
 
 /* ------------------------------MAIN contacto-------------------------------- */
-.mainContacto{
+.mainContacto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,35 +473,36 @@ grid-area:
     color: black;
 
 }
-.mainContacto h1:hover{
+
+.mainContacto h1:hover {
     color: #384bf5;
     text-decoration: underline;
     transition: 1s;
 }
 
 /* ----------Grids contacto---------- */
-.containerContacto{
+.containerContacto {
     display: grid;
     grid-template-areas:
-    "header header header" 
-    "main main main"
-    "section section section"
-    "pie pie pie";
+        "header header header"
+        "main main main"
+        "section section section"
+        "pie pie pie";
 }
 
-.header{
+.header {
     grid-area: header;
 }
 
-.mainContacto{
+.mainContacto {
     grid-area: main;
 }
 
-.sectionContacto{
+.sectionContacto {
     grid-area: section;
 }
 
-.footer{
+.footer {
     grid-area: pie;
 }
 
@@ -506,7 +512,7 @@ grid-area:
 
 /* ------------------------------MAIN carrito-------------------------------- */
 
-.mainCarrito{
+.mainCarrito {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -521,35 +527,36 @@ grid-area:
     color: black;
 
 }
-.mainCarrito h1:hover{
+
+.mainCarrito h1:hover {
     color: #384bf5;
     text-decoration: underline;
     transition: 1s;
 }
 
 /* ----------Grids carrito---------- */
-.containerCarrito{
+.containerCarrito {
     display: grid;
     grid-template-areas:
-    "header header header" 
-    "main main main"
-    "section section section"
-    "pie pie pie";
+        "header header header"
+        "main main main"
+        "section section section"
+        "pie pie pie";
 }
 
-.header{
+.header {
     grid-area: header;
 }
 
-.mainCarrito{
+.mainCarrito {
     grid-area: main;
 }
 
-.sectionCarrito{
+.sectionCarrito {
     grid-area: section;
 }
 
-.footer{
+.footer {
     grid-area: pie;
 }
 
@@ -595,7 +602,7 @@ grid-area:
 
 
 
-   
+
 }
 
 @media (max-width: 670px) {
@@ -667,13 +674,13 @@ grid-area:
             "section"
             "pie";
     }
-    
+
     .header {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
+
     }
 
 
@@ -711,7 +718,3 @@ grid-area:
 
     }
 }
-
-
-
-
