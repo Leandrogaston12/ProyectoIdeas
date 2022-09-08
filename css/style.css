@@ -1,85 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Roboto:wght@300&display=swap');
 
+
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
 
-/* selectores de etiquetas */
+
+
+
 body {
     background-image: url(../Imagenes/imagenBody.jpg);
 }
 
 
 
-h1 {
-    font-size: 4rem;
-    color: rgb(218, 120, 196);
+
+/* -----Nav------- */
+
+#botonera img{
+    height: 50px;
 }
 
-h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
-
-}
-
-h3 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
-
-.header {
+.bg-rose {
     background-color: rgb(218, 120, 196);
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+}
+
+.bg-black{
+   background-color: black;
+}
+
+.bg-violet{
+    background-color: #b038f5;
+    color: aliceblue;
 }
 
 
-.header nav ol {
-    list-style: none;
-    display: flex;
-}
-
-.header nav ol li a {
+#botonera div ul li a {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     padding: 1rem;
     transition: all 1s;
 }
 
-.header nav ol li a:hover {
+#botonera div ul li a:hover {
     color: rgb(0, 0, 0);
 
 }
 
-/* section p {
-    font-size: 2rem;
-    line-height: 2.2rem;
-} */
-
-/* selectores de clases */
-
-.text-white {
-    color: white;
-    font-size: 2rem;
-}
-
-.bg-green {
-    background-color: #44ee51;
-}
-
-.text-green {
-    color: #15b021;
+#botonera ul li a{
+    color: black;
 }
 
 
-/* ------------------------------MAIN-------------------------------- */
 
 
 /* ------video------- */
@@ -95,7 +70,6 @@ h3 {
     width: 100%;
     height: 500px;
 }
-
 
 /* -------ideas-------- */
 
@@ -126,26 +100,14 @@ h3 {
 }
 
 
-/* ---------formulario----------- */
-
-.formulario {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    border: solid #384bf5 5px;
-
-}
-
-.formulario textarea {
-    margin-bottom: 1rem;
-    display: flex;
-}
-
 
 /* -------maps---------- */
 
+.contenedorMapa{
+display: flex;
+width: 100%;
+justify-content: center;
+}
 
 .aside {
     margin-top: 1rem;
@@ -155,110 +117,62 @@ h3 {
     padding: 2rem;
     margin: 10px 10px 10px 10px;
     border: dashed orange 5px;
-    max-width: 600px;
+    width: 600px;
+    
 }
 
 .aside iframe {
     width: 100%;
-}
-
-
-
-
-
-/* ---------FOOTER-------------- */
-.footer {
-    display: flex;
-    justify-content: center;
-    /* background-color: #15b021; */
-    background-color: rgb(218, 120, 196);
 
 }
 
-.footer h4 {
+
+/* -------formulario------ */
+form h2{
     text-align: center;
 }
 
+.formulario {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: dashed #384bf5 4px;
+    
+
+}
+
+.formulario2{
+    width: 100%;
+}
+
+/* ---------------footer------------ */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(218, 120, 196);
+    justify-content: space-evenly;
+}
+
+
 .tamaño-iconos {
-    height: 40px;
-    margin-top: 10px;
+    height: 80px;
+    margin-top: 40px;
     padding: 10px;
     text-align: center;
 
 }
 
 .tamaño-iconos:hover {
-    height: 60px;
+    height: 95px;
     transition: all 1s;
 }
 
-.justify-content {
-    justify-content: space-between;
-}
-
-
-/* ----------Grids---------- */
-.contenedorInicio {
-    display: grid;
-    /* grid-template-columns: auto auto auto auto;
-    grid-template-rows: repeat(5,auto); */
-    grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "aside aside form form"
-        "pie pie pie pie";
-}
-
-.header {
-    grid-area: header;
-}
-
-.main {
-    grid-area: main;
-
-
-}
-
-.formInicio {
-    grid-area: form;
-
-}
-
-
-.aside {
-    grid-area: aside;
-
-}
-
-.footer {
-    grid-area: pie;
-
-}
 
 
 
-
-/* ------------------------------MAIN Papelera-------------------------------- */
-
-.mainPapelera {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mainPapelera h1 {
-    text-align: center;
-    font-size: 5rem;
-    text-decoration: underline;
-    color: black;
-}
-
-.mainPapelera h1:hover {
-    text-decoration: underline;
-    color: #384bf5;
-    transition: 1s;
-}
-
+/* ---------main papelera---------- */
 #sectionPapelera {
     display: flex;
     flex-wrap: wrap;
@@ -266,8 +180,15 @@ h3 {
 
 
 }
+h1{
+    text-align: center;
+    font-size: 5rem;
+    text-decoration: underline;
+    color: #660457;
+}
 
-#sectionPapelera figure h2 {
+
+/* #sectionPapelera figure h2 {
     text-align: center;
     font-size: 2rem;
 }
@@ -285,436 +206,25 @@ h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-#sectionPapelera figure img {
-    width: 100%;
-    height: 200px;
-    padding: 2rem;
-    border: solid #6848fd 5px;
-
-}
-
-#sectionPapelera figure img:hover {
-    width: 210px;
-    height: 210px;
-    transition: 0.5s;
-    /* transform: scale(1);
-    opacity: 0;
-    transition-delay: 0s; */
-    filter: grayscale(80%);
-}
-
-
-
-
-
-
-
-
-/* ------------------------------MAIN impresiones 3D-------------------------------- */
-
-.mainImpresiones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.mainImpresiones h1 {
-    text-align: center;
-    font-size: 5rem;
-    text-decoration: underline;
-    color: black;
-}
-
-.mainImpresiones h1:hover {
-    text-decoration: underline;
-    color: #384bf5;
-    transition: 1s;
-}
-
-#sectionImpresiones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-
-}
-
-#sectionImpresiones figure h2 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-#sectionImpresiones figure h2:hover {
-    color: #6848fd;
-    text-decoration: underline;
-    transition: 1s;
-}
-
-#sectionImpresiones figure {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#sectionImpresiones figure img {
-    width: 100%;
-    height: 200px;
-    padding: 2rem;
-    border: solid #6848fd 5px;
-
-}
-
-#sectionImpresiones figure img:hover {
-    width: 210px;
-    height: 210px;
-    transition: 1s;
-}
-
-
-/* ----------Grids Impresiones 3D---------- */
-
-/* .contenedorImpresiones{
-display: grid;
-grid-area: 
-"header header header"
-"main main main"
-"pie pie pie";
-} 
-
-.header {
-    grid-area: header;
-}
-
-.mainImpresiones {
-    grid-area: main;
-}
-
-
-.footer {
-    grid-area: pie;
 } */
 
-
-
-
-
-
-
-/* ------------------------------MAIN nosotros-------------------------------- */
-.mainNosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#sectionPapelera div img {
+    width: 100%;
+    height: 200px;
+    padding: 2rem;
+    border: solid #6848fd 5px;
 
 }
 
-.mainNosotros h1 {
-    align-content: flex-start;
-    text-align: center;
-    font-size: 5rem;
-    text-decoration: underline;
-    color: black;
-
-}
-
-.mainNosotros h1:hover {
-    color: #384bf5;
-    text-decoration: underline;
+ #sectionPapelera div img:hover {
+    /* width: 100px; */
+    /* height: 100px; */
+    border: solid #fd816f 5px;
     transition: 1s;
 }
 
-/* ----------Grids nosotros---------- */
-.containerNosotros {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "main main main"
-        "section section section"
-        "pie pie pie";
-}
-
-.header {
-    grid-area: header;
-}
-
-.mainNosotros {
-    grid-area: main;
-}
-
-.sectionNosotros {
-    grid-area: section;
-}
-
-.footer {
-    grid-area: pie;
-}
-
-
-
-/* ------------------------------MAIN contacto-------------------------------- */
-.mainContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.mainContacto h1 {
-    align-content: flex-start;
-    text-align: center;
-    font-size: 5rem;
-    text-decoration: underline;
-    color: black;
-
-}
-
-.mainContacto h1:hover {
-    color: #384bf5;
-    text-decoration: underline;
-    transition: 1s;
-}
-
-/* ----------Grids contacto---------- */
-.containerContacto {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "main main main"
-        "section section section"
-        "pie pie pie";
-}
-
-.header {
-    grid-area: header;
-}
-
-.mainContacto {
-    grid-area: main;
-}
-
-.sectionContacto {
-    grid-area: section;
-}
-
-.footer {
-    grid-area: pie;
-}
-
-
-
-
-
-/* ------------------------------MAIN carrito-------------------------------- */
-
-.mainCarrito {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.mainCarrito h1 {
-    align-content: flex-start;
-    text-align: center;
-    font-size: 5rem;
-    text-decoration: underline;
-    color: black;
-
-}
-
-.mainCarrito h1:hover {
-    color: #384bf5;
-    text-decoration: underline;
-    transition: 1s;
-}
-
-/* ----------Grids carrito---------- */
-.containerCarrito {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "main main main"
-        "section section section"
-        "pie pie pie";
-}
-
-.header {
-    grid-area: header;
-}
-
-.mainCarrito {
-    grid-area: main;
-}
-
-.sectionCarrito {
-    grid-area: section;
-}
-
-.footer {
-    grid-area: pie;
-}
-
-/* -----------MEDIA queries------- */
-
-
-@media (max-width: 1020px) {
-
-
-    .contenedorPapelera {
-        display: grid;
-        grid-template-areas:
-            "header header header header"
-            "main main main main"
-            "pie pie pie pie";
-    }
-
-
-    .header {
-        grid-area: header;
-    }
-
-
-    .mainPapelera {
-        grid-area: main;
-    }
-
-
-    .footer {
-        grid-area: pie;
-    }
-
-
-
-
-    .contenedorImpresiones {
-        display: grid;
-        grid-area:
-            "header header header"
-            "main main main"
-            "pie pie pie";
-    }
-
-
-
-
-}
-
-@media (max-width: 670px) {
-
-    .contenedorInicio {
-        display: grid;
-        /* grid-template-columns: auto auto auto auto;
-        grid-template-rows: repeat(5,auto); */
-        grid-template-areas:
-            "header header"
-            "main main"
-            "aside form"
-            "pie pie";
-    }
-
-}
-
-@media (max-width: 320px) {
-
-    .contenedorInicio {
-        display: grid;
-        /* grid-template-columns: auto auto auto auto;
-        grid-template-rows: repeat(5,auto); */
-        grid-template-areas:
-            "header"
-            "main"
-            "aside"
-            "form"
-            "pie";
-    }
-
-    .contenedorPapelera {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "pie";
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-
-    }
-
-    /* .contenedorImpresiones {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "pie";
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    } */
-
-    .contenedorCarrito {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "section"
-            "pie";
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-
-    .contenedorNosotros {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "section"
-            "pie";
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .contenedorContacto {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main"
-            "section"
-            "pie";
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
+section .card{
+    background-color: none;
+    height: 300px;
+    width: 300px;
 }
