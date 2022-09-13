@@ -19,6 +19,9 @@ body {
 
 /* -----Nav------- */
 
+.sticky-top{
+    position: sticky top;
+}
 #botonera img{
     height: 50px;
 }
