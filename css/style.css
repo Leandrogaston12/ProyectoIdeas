@@ -19,9 +19,6 @@ body {
 
 /* -----Nav------- */
 
-.sticky-top{
-    position: sticky top;
-}
 #botonera img{
     height: 50px;
 }
@@ -120,7 +117,7 @@ justify-content: center;
     padding: 2rem;
     margin: 10px 10px 10px 10px;
     border: dashed orange 5px;
-    width: 600px;
+    width: 900px;
     
 }
 
@@ -210,6 +207,25 @@ h1{
     justify-content: center;
     text-align: center;
 } */
+
+/* selectores por atributo */
+
+#sectionPapelera img[src="Imagenes/Papelera/acomodadorPersonalizable.jpeg"]{
+    border: solid  rgb(218, 120, 196) 5px;
+}
+
+
+#sectionPapelera img[src="Imagenes/Papelera/celularPapelPersonalizable.jpeg"]{
+    border: solid  rgb(218, 120, 196) 5px;
+}
+
+#sectionPapelera img[src="Imagenes/Papelera/pinDePapelPersonalizable.jpeg"]{
+    border: solid  rgb(218, 120, 196) 5px;
+}
+
+#sectionPapelera img[src="Imagenes/Papelera/tarjetaPersonalizada.jpeg"]{
+    border: solid  rgb(218, 120, 196) 5px;
+}
 
 #sectionPapelera div img {
     width: 100%;
