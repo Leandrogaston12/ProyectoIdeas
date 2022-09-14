@@ -104,9 +104,10 @@ body {
 /* -------maps---------- */
 
 .contenedorMapa{
-display: flex;
-width: 100%;
-justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .aside {
@@ -114,10 +115,9 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    /* padding: 2rem; */
     margin: 10px 10px 10px 10px;
     border: dashed orange 5px;
-    width: 900px;
     
 }
 
@@ -137,15 +137,14 @@ form h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    /* padding: 2rem; */
     border: dashed #384bf5 4px;
+    width: 100%;
     
 
 }
 
-.formulario2{
-    width: 100%;
-}
+
 
 /* ---------------footer------------ */
 .footer {
@@ -247,3 +246,43 @@ section .card{
     height: 300px;
     width: 300px;
 }
+
+
+
+/* -------Media queries-------- */
+@media (max-width: 767px){
+.contenedorInicio{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "form"
+    "pie"
+    ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.formulario2{
+    grid-area: form;
+    width: 100%;
+}
+
+.footer{
+    grid-area: pie;
+}
+
+
+}
+
