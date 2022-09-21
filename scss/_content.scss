@@ -19,19 +19,6 @@ body {
     height: 50px;
 }
 
-.bg-rose {
-    background-color: $mainColor;
-}
-
-.bg-black {
-    background-color: $secondaryColor ;
-}
-
-.bg-violet {
-    background-color: $bgViolet;
-    color: $white;
-}
-
 #botonera {
     div {
          ul {
@@ -67,7 +54,7 @@ body {
 .ideas{
     display: $keyCode;
     flex-direction: column;
-    align-items: center;
+    align-items: $center;
     margin: $margin;
     padding: $secondaryPadding;
     border: dashed $orange 5px;
@@ -76,9 +63,10 @@ body {
     font-size: $threePadding ;
     color: $mainColor;
     text-transform: uppercase;
+    text-decoration: underline;
     font-family: $secondatyFont;
     margin: 0;
-    text-align: center;
+    text-align: $center;
     padding-bottom: $padding;
 
         }    
@@ -86,7 +74,7 @@ body {
 }
 .ideas p {
     max-width: 300px;
-    text-align: center;
+    text-align: $center;
     margin: 0;
     padding: $padding;
 }
@@ -100,7 +88,7 @@ body {
     margin-top: 1rem;
     display: $keyCode;
     flex-direction: column;
-    align-items: center;
+    align-items: $center;
     margin: $margin;
     border: dashed $orange 5px;
         iframe{
@@ -110,22 +98,24 @@ body {
 
 //formulario
 form h2{
-    text-align: center;
+    text-align: $center;
 }
 
 .formulario{
     margin-top: $padding;
     display: $keyCode;
     flex-direction: column;
-    align-items: center;
+    align-items: $center;
     border: dashed $blue 4px;
     width: 100%;
+
+    
 }
 
 //footer
 .footer {
     display: $keyCode;
-    justify-content: center;
+    justify-content: $center;
     background-color: $mainColor;
     justify-content: space-evenly;
 }
@@ -134,7 +124,7 @@ form h2{
     height: 80px;
     margin-top: 40px;
     padding: $margin;
-    text-align: center;
+    text-align: $center;
     &:hover{    
         height:95px;
         transition: all 1s;
@@ -143,3 +133,76 @@ form h2{
 }
 
 
+    
+
+
+//------Main papelera-----
+#sectionPapelera{
+    @extend #section
+}
+
+h1{
+    text-align: $center;
+    font-size: 5rem;
+    text-decoration: underline;
+    color: $violetPure;
+}
+
+// selectores por atributo 
+
+#sectionPapelera img[src="Imagenes/Papelera/acomodadorPersonalizable.jpeg"]{
+    border: solid  $mainColor 5px;
+}
+
+
+#sectionPapelera img[src="Imagenes/Papelera/celularPapelPersonalizable.jpeg"]{
+    border: solid $mainColor  5px;
+}
+
+#sectionPapelera img[src="Imagenes/Papelera/pinDePapelPersonalizable.jpeg"]{
+    border: solid $mainColor 5px;
+}
+
+#sectionPapelera img[src="Imagenes/Papelera/tarjetaPersonalizada.jpeg"]{
+    border: solid  $mainColor 5px;
+}
+
+
+section .card{
+    background-color: none;
+    height: 300px;
+    width: 300px;
+}
+
+
+//----Impresiones 3D-----
+#sectionImpresiones{
+    @extend #section 
+}
+
+h1{
+    text-align: $center;
+    font-size: 5rem;
+    text-decoration: underline;
+    color: $violetPure;
+}
+
+//selectores por atributo
+#sectionImpresiones img[src="Imagenes/Impresion-3D/adornoPapaImpresion3D.jpeg"]{
+    border: solid $mainColor  5px;
+}
+
+
+#sectionImpresiones img[src="Imagenes/Impresion-3D/guardaEsponjaHomeroImpresion3D.jpeg"]{
+    border: solid $mainColor  5px;
+}
+
+#sectionImpresiones img[src="Imagenes/Impresion-3D/souvenirLlaveroImpresion3D.jpeg"]{
+    border: solid  $mainColor 5px;
+}
+
+section .card{
+    background-color: none;
+    height: 300px;
+    width: 300px;
+}

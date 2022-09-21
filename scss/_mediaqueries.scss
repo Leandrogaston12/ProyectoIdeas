@@ -1,0 +1,36 @@
+//media queries 
+@media (max-width: 767px){
+    .contenedorInicio{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "form"
+        "pie"
+        ;
+    }
+    
+    .header{
+        grid-area: header;
+    }
+    
+    .main{
+        grid-area: main;
+    }
+    
+    .aside{
+        grid-area: aside;
+    }
+    
+    .formulario2{
+        grid-area: form;
+        width: 100%;
+    }
+    
+    .footer{
+        grid-area: pie;
+    }
+    
+    
+    }

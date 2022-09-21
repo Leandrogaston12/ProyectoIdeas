@@ -1,0 +1,55 @@
+//extend
+
+#section{
+    display: $keyCode;
+    flex-wrap: wrap;
+    justify-content: $center;
+}
+
+
+
+//mixin
+@mixin imagenes ($width,$height,$relleno,){
+    width: $width;
+    height: $height;
+    padding: $relleno;
+    border: solid $violetSure 5px; ;
+}
+//section papelera
+#sectionPapelera{
+    div{ 
+
+
+        img{
+            @include imagenes(100%,200px ,$secondaryPadding );
+            
+
+        
+            &:hover{
+                border: solid $orange 5px;
+                transition: 1s;
+            }
+    
+        }
+    }        
+}
+
+//section impresiones
+
+#sectionImpresiones{
+    div{
+
+
+        img{
+            @include imagenes(100%, 200px, $secondaryPadding);
+
+
+
+
+            &:hover{
+                border: solid $orange 5px;
+                transition: 1s;
+            }
+        }
+    } 
+}
