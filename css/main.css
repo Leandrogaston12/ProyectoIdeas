@@ -215,6 +215,10 @@ section .card {
   .main {
     grid-area: main;
   }
+  .contenedorMapa {
+    display: flex;
+    flex-direction: column;
+  }
   .aside {
     grid-area: aside;
   }
