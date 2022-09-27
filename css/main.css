@@ -230,3 +230,14 @@ section .card {
     grid-area: pie;
   }
 }
+@media (max-width: 576px) {
+  .video {
+    width: 550px;
+  }
+  .tamaño-del-video {
+    height: 100%;
+  }
+  .ideas {
+    width: 550px;
+  }
+}

@@ -38,3 +38,21 @@
     
     
     }
+
+    @media (max-width: 576px) {
+        .video{
+            // padding: 0.5rem;
+            width: 550px;
+            
+        }
+
+        .tamaño-del-video{
+            height: 100%;
+        }
+
+        .ideas{
+            width: 550px;
+            
+        }
+
+    }
