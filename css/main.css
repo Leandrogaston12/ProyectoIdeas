@@ -176,6 +176,11 @@ section .card {
   width: 300px;
 }
 
+#iconContact h2::before {
+  content: url("../Imagenes/imagenesIconos/whatsapp.svg");
+  padding: 1rem;
+}
+
 #section, #sectionPapelera, #sectionImpresiones {
   display: flex;
   flex-wrap: wrap;

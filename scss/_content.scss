@@ -207,4 +207,8 @@ section .card{
     width: 300px;
 }
 
-//----carrito-----
+//----contacto-----
+#iconContact h2::before{
+    content: url("../Imagenes/imagenesIconos/whatsapp.svg");
+    padding: $padding;
+}
