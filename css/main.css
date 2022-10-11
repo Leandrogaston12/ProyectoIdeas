@@ -181,6 +181,18 @@ section .card {
   padding: 1rem;
 }
 
+.mainContacto {
+  height: 100vh;
+}
+
+.mainCarrito {
+  height: 100vh;
+}
+
+.mainNosotros {
+  height: 100vh;
+}
+
 #section, #sectionPapelera, #sectionImpresiones {
   display: flex;
   flex-wrap: wrap;
