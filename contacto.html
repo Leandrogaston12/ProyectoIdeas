@@ -69,17 +69,44 @@
         <div class="container">
             <div class="row">
                 <h1>Contacto</h1>
+                
                 <!-- empieza formulario -->
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">
-                        <h2>Deja un comentario sobre los productos.</h2>
-                    </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-                </div>
-                <div class="col-2">
-                    <button type="button" class="btn bg-violet w-75">Enviar</button>
-                </div>
-
+                
+                <form class="row g-3 py-3">
+                    <article class="formulario">
+                        <h2>formulario</h2>
+                        <div class="col-6">
+                            <label for="inputAddress" class="form-label">
+                                <h3>Nombre</h3>
+                            </label>
+                            <input type="text" class="form-control" id="inputAddress"
+                                placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddress2" class="form-label">
+                                <h3>Apellido</h3>
+                            </label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="ingrese su apellido">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputEmail4" class="form-label">
+                                <h3>Mail</h3>
+                            </label>
+                            <input type="email" class="form-control" id="inputEmail4"
+                                placeholder="Ingrese su mail">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputPassword4" class="form-label">
+                                <h3>contraseña</h3>
+                            </label>
+                            <input type="password" class="form-control" id="inputPassword4"
+                                placeholder="ingrese su contraseña">
+                        </div>
+                        <div class="col-4 py-3">
+                            <button type="button" class="btn bg-violet w-75">Registrarse</button>
+                        </div>
+                </form>
 
                 <!-- cierra formulario -->
 
